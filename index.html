@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for Business Analytics - Course Videos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐍</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-python"></i>
+                <span>PyAnalytics</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-address-book"></i> Contact
+                </a>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search videos...">
+                    <button class="search-clear" id="clearSearch">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-nav-link active">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="about.html" class="mobile-nav-link">
+            <i class="fas fa-info-circle"></i> About
+        </a>
+        <a href="contact.html" class="mobile-nav-link">
+            <i class="fas fa-address-book"></i> Contact
+        </a>
+        <div class="mobile-search">
+            <input type="text" placeholder="Search videos..." id="mobileSearch">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="course-title">
+                    <i class="fab fa-python"></i> Java-Script by SMIT 
+                </h1>
+                <p class="course-subtitle">Learn Basic to Advance Java</p>
+                
+                <!-- PDF Download Button -->
+                <div class="pdf-actions">
+                    <button class="btn-pdf" id="downloadAllPDF">
+                        <i class="fas fa-file-pdf"></i> Download All Lectures PDF
+                    </button>
+                </div>
+                
+                <!-- Sort Control -->
+                <div class="sort-control">
+                    <span class="sort-label">Sort by:</span>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="lecture">Lecture Order</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile TOC Button -->
+        <button class="mobile-toc-btn" id="mobileTocBtn">
+            <i class="fas fa-list-ol"></i> Show Course Contents
+        </button>
+
+        <!-- Table of Contents (Mobile-style for all devices) -->
+        <div class="toc-container" id="tocContainer">
+            <div class="toc-header" id="tocHeader">
+                <h2><i class="fas fa-list-ol"></i> Course Contents</h2>
+                <button class="toc-close" id="tocClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="toc-content" id="tocContent">
+                <div class="toc-list" id="tocList">
+                    <!-- TOC items will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Videos Grid -->
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be loaded here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No videos found</h3>
+                <p>Try a different search term or clear your search</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-python"></i>
+                    <span>Java-Script by SMIT</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p class="footer-copyright">
+                    © <span id="currentYear"></span> This Webpage is just for the help of SMIT.JS-1 Students. Not for the sake of earning Money. All rights reserved by Saylani Mass IT Training. Video content hosted on YouTube.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="pdf-generator.js"></script>
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Debug
+        console.log('Index page loaded');
+        console.log('videoData available:', typeof videoData !== 'undefined');
+    </script>
+</body>
+</html>
