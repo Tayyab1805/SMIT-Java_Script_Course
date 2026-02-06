@@ -578,7 +578,180 @@ const videoData = [
     ],
   },
 
+   {
+    id: 9,
+    number: "Lecture 9",
+    title: "Class 9",
+    thumbnail: "https://i.ytimg.com/vi/EJd_bjTpLNE/hqdefault.jpg?",
+    youtubeLink: "https://youtu.be/EJd_bjTpLNE?",
+    duration: "01:30:50",
+    dateAdded: "02-Feb-2026",
+    summary: `<h2>Detailed Summary: JavaScript Class 9 - For Loops & Arrays</h2>
+<p><b>Video:</b> 02 FEB 2026 || Class 09 || SMIT JAVASCRIPT</p>
 
+<h3>Introduction to For Loops</h3>
+<dl>
+    <dt><b>Core Components</b> <a href="https://youtu.be/EJd_bjTpLNE?t=455" target="_blank">(Video @ 7:35)</a></dt>
+    <dd>The speaker explains that for loops are used for repetition in code, taking three main components: <b>initialization</b>, <b>condition</b>, and <b>increment/decrement</b>.</dd>
+</dl>
+
+<h3>Basic Loop Examples</h3>
+<dl>
+    <dt><b>Printing a Sequence</b> <a href="https://youtu.be/EJd_bjTpLNE?t=575" target="_blank">(Video @ 9:35)</a></dt>
+    <dd>The video demonstrates how to use a <code>for</code> loop to print numbers from 1 to 10.</dd>
+    <dt><b>Reverse Loops (Decrementing loops)</b> <a href="https://youtu.be/EJd_bjTpLNE?t=585" target="_blank">(Video @ 9:45)</a></dt>
+    <dd>The speaker explains how to create a <code>for</code> loop that prints numbers in descending order, from 10 to 1, by using a decrement operator and adjusting the condition.</dd>
+</dl>
+
+<h3>Identifying Even and Odd Numbers</h3>
+<dl>
+    <dt><b>Using the Modulus Operator</b> <a href="https://youtu.be/EJd_bjTpLNE?t=880" target="_blank">(Video @ 14:40)</a></dt>
+    <dd>The video illustrates how to use the modulus operator (<code>%</code>) within a <code>for</code> loop to identify and print numbers between 1 and 20.</dd>
+    <dt><b>Odd Numbers</b> <a href="https://youtu.be/EJd_bjTpLNE?t=952" target="_blank">(Video @ 15:52)</a></dt>
+    <dd>Numbers that are not divisible by 2 (e.g., <code>i % 2 === 1</code>).</dd>
+    <dt><b>Even Numbers</b> <a href="https://youtu.be/EJd_bjTpLNE?t=1194" target="_blank">(Video @ 19:54)</a></dt>
+    <dd>Numbers that are divisible by 2 (e.g., <code>i % 2 === 0</code>).</dd>
+</dl>
+
+<h3>Iterating Through Arrays with For Loops</h3>
+<dl>
+    <dt><b>Accessing Array Elements</b> <a href="https://youtu.be/EJd_bjTpLNE?t=1526" target="_blank">(Video @ 25:26)</a></dt>
+    <dd>A significant portion of the video is dedicated to using <code>for</code> loops to access and print elements within an array.</dd>
+    <dt><b>Zero-Based Indexing</b> <a href="https://youtu.be/EJd_bjTpLNE?t=1731" target="_blank">(Video @ 28:51)</a></dt>
+    <dd>The importance of zero-based indexing for array loops is emphasized.</dd>
+    <dt><b>The <code>array.length</code> Property</b> <a href="https://youtu.be/EJd_bjTpLNE?t=1860" target="_blank">(Video @ 31:00)</a></dt>
+    <dd>The <code>array.length</code> property is introduced as a dynamic way to set the loop's end condition, making it adaptable to arrays of different sizes.</dd>
+</dl>
+
+<h3>Searching for Elements in an Array</h3>
+<dl>
+    <dt><b>Practical Search Example</b> <a href="https://youtu.be/EJd_bjTpLNE?t=2257" target="_blank">(Video @ 37:37)</a></dt>
+    <dd>The speaker demonstrates how to use a <code>for</code> loop to search for a specific user-provided city within an array of cities.</dd>
+    <dt><b>The <code>break</code> Keyword</b> <a href="https://youtu.be/EJd_bjTpLNE?t=2839" target="_blank">(Video @ 47:19)</a></dt>
+    <dd>The <code>break</code> keyword is introduced to stop the loop once a match is found, improving efficiency.</dd>
+</dl>`
+
+// section for questions
+    qa: [
+      {
+        question: " <H1>This sections is under processing</H1> <br> <h3>Soon We will Lanuch this as well</h3>"
+      ,
+        answer: "",
+      },
+    ],
+  },
+
+
+   {
+    id: 10,
+    number: "Lecture 10",
+    title: "Class 10",
+    thumbnail: "https://i.ytimg.com/vi/ELQgIbpRuh8/hqdefault.jpg?",
+    youtubeLink: "https://youtu.be/ELQgIbpRuh8",
+    duration: "01:50:02",
+    dateAdded: "04-Feb-2026",
+    summary: `<h2>Detailed Summary: JavaScript Class 10 - String Manipulation</h2>
+<p><b>Video:</b> 04 Feb 2026 || Class 10 || SMIT JAVASCRIPT</p>
+
+<h3>Handling if-else within Loops</h3>
+<dl>
+    <dt><b>Common Issue</b> <a href="https://youtu.be/ELQgIbpRuh8?t=909" target="_blank">(Video @ 15:09)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=963" target="_blank">(Video @ 16:03)</a></dt>
+    <dd>The instructor begins by explaining a common issue when using <code>if-else</code> statements inside a <code>for</code> loop: if both branches contain alerts, the user might see multiple outputs (e.g., "Not Found" then "Welcome") even if a match is eventually found. This happens because the <code>else</code> condition executes on every iteration where the <code>if</code> condition is false.</dd>
+</dl>
+
+<h3>Introducing the "Flag" Concept</h3>
+<dl>
+    <dt><b>Problem Solution</b> <a href="https://youtu.be/ELQgIbpRuh8?t=963" target="_blank">(Video @ 16:03)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=1091" target="_blank">(Video @ 18:11)</a></dt>
+    <dd>To solve the multiple output problem, the "flag" concept is introduced. A boolean variable (e.g., <code>flag</code> or <code>isMatch</code>) is initialized to <code>false</code>. Inside the loop, if a match is found (e.g., user's city matches a city in the array), the flag is set to <code>true</code>, and a "Welcome" alert is displayed. After the loop finishes, an <code>if</code> condition checks if the flag is still <code>false</code>. If it is, it means no match was found, and a "Not Found" alert is shown. This ensures only one final output based on the loop's overall result.</dd>
+</dl>
+
+<h3>Strings as Array-like Data Types</h3>
+<dl>
+    <dt><b>Data Type Explanation</b> <a href="https://youtu.be/ELQgIbpRuh8?t=1226" target="_blank">(Video @ 20:26)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=1293" target="_blank">(Video @ 21:33)</a></dt>
+    <dd>The video explains that strings in JavaScript are also considered a data type, specifically a "collection of data" similar to arrays. This means individual characters within a string can be accessed using array-like indexing (e.g., <code>string[0]</code> to get the first character).</dd>
+</dl>
+
+<h3>Converting Case (toUpperCase() and toLowerCase())</h3>
+<dl>
+    <dt><b>Case Methods</b> <a href="https://youtu.be/ELQgIbpRuh8?t=1513" target="_blank">(Video @ 25:13)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=1636" target="_blank">(Video @ 27:16)</a></dt>
+    <dd>
+        <ul>
+            <li>The <code>toUpperCase()</code> method is demonstrated to convert an entire string to uppercase.</li>
+            <li>The <code>toLowerCase()</code> method converts an entire string to lowercase.</li>
+        </ul>
+        These methods are crucial for handling case-sensitive comparisons in JavaScript.
+    </dd>
+</dl>
+
+<h3>Addressing Case Sensitivity in User Input</h3>
+<dl>
+    <dt><b>Real-World Problem</b> <a href="https://youtu.be/ELQgIbpRuh8?t=1637" target="_blank">(Video @ 27:17)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=1832" target="_blank">(Video @ 30:32)</a></dt>
+    <dd>The instructor illustrates a common real-world problem: user input might not match the case of stored data (e.g., "Karachi" vs. "karachi"). Since JavaScript is case-sensitive ('a' is not equal to 'A'), direct comparison fails. The solution is to convert the user's input to a consistent case (e.g., <code>toLowerCase()</code>) before comparing it with values in an array, ensuring accurate matches regardless of the user's input casing.</dd>
+</dl>
+
+<h3>Capitalization (Manual Implementation)</h3>
+<dl>
+    <dt><b>Three Cases</b> <a href="https://youtu.be/ELQgIbpRuh8?t=1980" target="_blank">(Video @ 33:00)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=2840" target="_blank">(Video @ 47:20)</a></dt>
+    <dd>The video differentiates between uppercase, lowercase, and "capitalize" (where only the first letter is uppercase, and the rest are lowercase).</dd>
+    <dt><b>No Built-in Method</b></dt>
+    <dd>It's noted that JavaScript does not provide a built-in method for capitalization.</dd>
+    <dt><b>Manual Implementation Steps</b></dt>
+    <dd>
+        A manual implementation is demonstrated:
+        <ol>
+            <li>Extract the first character using <code>string[0]</code>.</li>
+            <li>Convert the first character to uppercase using <code>toUpperCase()</code>.</li>
+            <li>Extract the rest of the string using the <code>slice(1)</code> method (which works on strings like arrays).</li>
+            <li>Concatenate the uppercase first character with the rest of the string.</li>
+        </ol>
+        This manual approach helps understand how such a utility function would work behind the scenes.
+    </dd>
+</dl>
+
+<h3>Understanding String Literals and Escaping Quotes</h3>
+<dl>
+    <dt><b>Best Practices</b> <a href="https://youtu.be/ELQgIbpRuh8?t=2900" target="_blank">(Video @ 48:20)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=3032" target="_blank">(Video @ 50:32)</a></dt>
+    <dd>The video briefly touches upon best practices for writing strings, especially when they contain quotation marks. It explains that if a string is defined with double quotes, any internal double quotes must be escaped or the internal quotes should be single quotes, and vice-versa, to avoid syntax errors. It also clarifies that multi-line strings are not directly allowed without specific techniques like template literals (though not explicitly shown in this segment).</dd>
+</dl>
+
+<h3>Finding Substring Index (indexOf())</h3>
+<dl>
+    <dt><b>Method Introduction</b> <a href="https://youtu.be/ELQgIbpRuh8?t=3393" target="_blank">(Video @ 56:33)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=5837" target="_blank">(Video @ 1:37:17)</a></dt>
+    <dd>The <code>indexOf()</code> method is introduced to find the first occurrence of a specified substring within a string, returning its starting index. This is presented as a more efficient way to find parts of a string compared to manually looping through characters.</dd>
+    <dt><b>Practical Example</b></dt>
+    <dd>A practical example demonstrates how <code>indexOf()</code> can be used to determine the endIndex for the <code>slice()</code> method, allowing dynamic extraction of string segments.</dd>
+</dl>
+
+<h3>Replacing Substrings (replace() and replaceAll())</h3>
+<dl>
+    <dt><b>Replacement Methods</b> <a href="https://youtu.be/ELQgIbpRuh8?t=5645" target="_blank">(Video @ 1:34:05)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=6100" target="_blank">(Video @ 1:41:40)</a></dt>
+    <dd>
+        <ul>
+            <li>The <code>replace()</code> method is introduced as a simpler way to replace a specific word or character in a string. It takes two arguments: the substring to be replaced and the replacement string. It only replaces the first occurrence found.</li>
+            <li>The <code>replaceAll()</code> method is then demonstrated to replace all occurrences of a specified substring within the string.</li>
+        </ul>
+    </dd>
+    <dt><b>Crucial Point</b></dt>
+    <dd>A crucial point highlighted is that both <code>replace()</code> and <code>replaceAll()</code> do not modify the original string; they return a new string with the replacements. Therefore, the result must be assigned to a new variable or the original variable to see the changes.</dd>
+</dl>
+
+<h3>charAt() Method</h3>
+<dl>
+    <dt><b>Character Access</b> <a href="https://youtu.be/ELQgIbpRuh8?t=6161" target="_blank">(Video @ 1:42:41)</a> <a href="https://youtu.be/ELQgIbpRuh8?t=6202" target="_blank">(Video @ 1:43:22)</a></dt>
+    <dd>The <code>charAt()</code> method is presented as an alternative to array-like indexing for accessing a character at a specific position within a string. Both <code>string[index]</code> and <code>string.charAt(index)</code> achieve the same result.</dd>
+</dl>
+    
+    `
+
+// section for questions
+    qa: [
+      {
+        question: " <H1>This sections is under processing</H1> <br> <h3>Soon We will Lanuch this as well</h3>"
+      ,
+        answer: "",
+      },
+    ],
+  },
 
 
 
