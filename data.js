@@ -629,7 +629,7 @@ const videoData = [
     <dd>The speaker demonstrates how to use a <code>for</code> loop to search for a specific user-provided city within an array of cities.</dd>
     <dt><b>The <code>break</code> Keyword</b> <a href="https://youtu.be/EJd_bjTpLNE?t=2839" target="_blank">(Video @ 47:19)</a></dt>
     <dd>The <code>break</code> keyword is introduced to stop the loop once a match is found, improving efficiency.</dd>
-</dl>`
+</dl>`,
 
 // section for questions
     qa: [
@@ -741,7 +741,7 @@ const videoData = [
     <dd>The <code>charAt()</code> method is presented as an alternative to array-like indexing for accessing a character at a specific position within a string. Both <code>string[index]</code> and <code>string.charAt(index)</code> achieve the same result.</dd>
 </dl>
     
-    `
+    `,
 
 // section for questions
     qa: [
